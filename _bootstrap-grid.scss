@@ -1,0 +1,52 @@
+/* ==================================================
+  Bootstrap 4 grid only
+  ================================================== */
+@at-root {
+@-ms-viewport { width: device-width; }
+}
+
+html {
+box-sizing: border-box;
+-ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+// ----------------------------------------------------
+// 1. Core scss files
+// ----------------------------------------------------
+@import "scss/functions";
+@import "scss/variables";
+@import "scss/mixins/breakpoints";
+@import "scss/mixins/grid-framework";
+@import "scss/mixins/grid";
+
+// ----------------------------------------------------
+// 2. Variable overrides / customisation:
+// ----------------------------------------------------
+//$grid-breakpoints: (
+//  xs: 0,
+//  sm: 544px,
+//  md: 768px,
+//  lg: 992px,
+//  xl: 1200px
+//);
+//@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+
+//$container-max-widths: (
+//  sm: 576px,
+//  md: 720px,
+//  lg: 940px,
+//  xl: 1140px
+//);
+//@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+// ----------------------------------------------------
+// 3. The rest of the required files
+// ----------------------------------------------------
+@import "scss/grid";
